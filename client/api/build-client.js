@@ -4,7 +4,7 @@ const buildClient = ({ req }) => {
     if(typeof window === 'undefined') {
         //onserver
         return axios.create({
-            baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local', 
+            baseURL: 'http://www.bigcouch.app', 
             headers: req.headers
         });
     } else {
